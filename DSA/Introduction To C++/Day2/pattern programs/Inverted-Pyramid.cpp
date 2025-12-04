@@ -3,9 +3,10 @@ using namespace std;
 
 int main()
 {
-    for (int i = 5; i >= 1; i--)
+    int n=5;
+    for (int i = n; i >= 1; i--)
     {
-        for (int k = 1; k <= 5 - i; k++)
+        for (int k = 1; k <= n - i; k++)
         {
             cout << " ";
         }
@@ -17,3 +18,9 @@ int main()
 
     return 0;
 }
+
+// *********
+//  *******
+//   *****
+//    ***
+//     *
