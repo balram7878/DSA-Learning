@@ -10,6 +10,8 @@ int main()
     int y = 5;
     double result = x / y;
     // cout << (result);
-    cout << 10.0 / 3;
+    // cout << 10.0 / 3;
+    string str="dog";
+    cout<<str.substr(0,0);
     return 0;
 }
