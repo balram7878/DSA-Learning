@@ -1,5 +1,32 @@
-Link for notes-> 
+Link for notes->
 https://www.notion.so/Lecture-01-Introduction-to-C-2bca9af81c988026bff5ed8119f997d1
 https://www.notion.so/Lecture-02-Operator-if-else-loop-in-C-2bda9af81c988063a5f6e7e3b187de59
 https://www.notion.so/Lecture-03-04-and-05-Loop-in-C-2bfa9af81c9880c1b133d84caebd9f82
 https://www.notion.so/Lecture-06-C-Functions-and-Arrays-2c6a9af81c988098848bc9f270154bd8
+
+---
+
+XOR
+
+0 ^ 1 = 1
+1 ^ 0 = 1
+0 ^ 0 = 0
+1 ^ 1 = 1
+
+-> so, 1^2^3^5^1^2^3^4^5 = 4
+-> XOR of same element is always zero regardles of the order
+
+# find mission element in the array using XOR
+
+find XOR of all the elements in the array
+
+for(int i=0; i<size; i++){
+result=result^arr[i]^(i+1);
+}
+
+and then find XOR with size+1;
+
+result^(size+1);
+that it!
+
+---
