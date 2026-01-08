@@ -30,3 +30,37 @@ result^(size+1);
 that it!
 
 ---
+
+# rotate array by K position in right
+
+- take a new array and iterate a loop of size of old array
+- and then find position of element using (i+k)%size
+- put temp[pos]=arr[i];
+
+# Boyer-Moore Voting Algorithm
+
+- cancel out different elements then the majority survives
+  {
+    int candidate = 0;
+    int count = 0;
+
+    for (int num : nums) {
+        if (count == 0) {
+            candidate = num;
+        }
+
+        if (num == candidate)
+            count++;
+        else
+            count--;
+    }
+
+    return candidate;
+  }
+
+
+---
+
+
+
+
