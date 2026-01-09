@@ -65,4 +65,44 @@ that it!
 # Time Complexity
 
 -> Time Complexity measures how operations grow with input size!
+- It measures how fast work grows when input size grows.
 -> Time complexity is a function that describes how the number of operations an algorithm performs grows as the input size increases.
+
+1. Logarithmic Time — O(log n)
+
+- Each step cuts the problem size.
+- You’re not iterating over all data. You’re throwing away big chunks every time.
+- “loop + divide/double = logarithmic”
+
+2. Linearithmic Time — O(n log n)
+
+- Touch every element (linear)
+- AND for each phase, you divide the problem (logarithmic)
+- So: O(n) × O(log n) = O(n log n)
+- loops + divide & conquer = linearithmic” ->
+  -> Divide → creates levels (log n)
+  -> Conquer (merge/process) → touches all elements at each level
+
+3. Exponential Time — O(2ⁿ)
+
+- Each step branches into multiple paths.
+- Work doubles, then doubles again.
+- Example: Naive Fibonacci
+int fib(int n) {
+    if (n <= 1) return n;
+    return fib(n-1) + fib(n-2);
+}
+
+-> Call tree:
+
+fib(5)
+ ├── fib(4)
+ │    ├── fib(3)
+ │    └── fib(2)
+ └── fib(3)
+      ├── fib(2)
+      └── fib(1)
+
+- Same subproblems solved again and again.
+
+---
