@@ -46,6 +46,7 @@ that it!
     int count = 0;
 
     for (int num : nums) {
+
         if (count == 0) {
             candidate = num;
         }
@@ -54,6 +55,7 @@ that it!
             count++;
         else
             count--;
+        
     }
 
     return candidate;
@@ -106,3 +108,8 @@ fib(5)
 - Same subproblems solved again and again.
 
 ---
+
+when we are find the sqrt of any number with binary search it's time complexity is log(n) but if we solve this problem with normal approach it's time complexity is n^1/2.
+
+
+

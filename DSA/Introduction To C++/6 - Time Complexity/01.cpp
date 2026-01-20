@@ -17,18 +17,16 @@
 //     }
 // }
 
-
 // for(int i=0;i<n;i=i+2){    --> time complexity = n because of n/2 iterations
 //     cout<<"Hello";
 // }
-
 
 // for(int i=1;i<n;i=i*2){   --> time complexity = log2(n)
 //     cout<<"Hello";
 // }
 
 // for(int i=1;i<n;i=i*3){   ---> time complexity = log3(n)
-//     cout<<"Hello"; 
+//     cout<<"Hello";
 // }
 
 // for(int i=n;i>1;i=i/2){   --> time complexity = log2(n)
@@ -49,11 +47,16 @@
 //     }
 // }
 
-
-#include<iostream>
+#include <iostream>
+#include<stdio.h>
 using namespace std;
-int main(){
+int main()
+{
 
-    cout<<!5;
-    return 0;
+    int i=0;
+
+    for (printf("Hello"); i <= 2; i++)
+    {
+        printf("%d", i);
+    }
 }
